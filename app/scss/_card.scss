@@ -1,0 +1,85 @@
+.title {
+  text-align: center;
+  color: $text;
+  margin: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.container {
+  background-color: $card;
+  color: $text;
+  min-width: 400px;
+  min-height: 500px;
+  border: 3px solid $border;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  @include mobile {
+    min-width: 150px;
+  }
+}
+
+.card {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+  min-height: 509px;
+  &__image {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    object-fit: contain;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  &__stats {
+    text-align: left;
+  }
+}
+
+p {
+  padding: 5px;
+}
+
+.button {
+  text-align: center;
+  background-color: $border;
+  outline: none;
+  padding: 10px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 10px;
+  color: $background;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 300ms;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: $text;
+}
+.fa-github {
+  color: $text;
+  text-align: center;
+  margin: 0 auto;
+}
